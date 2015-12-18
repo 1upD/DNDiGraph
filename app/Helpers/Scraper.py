@@ -12,7 +12,7 @@ from PressRelease import PressRelease
 
 class Scraper(object):
     '''
-    classdocs
+    Class used for the process of scraping data from DnDi
     '''
 
     def __init__(self):
@@ -23,11 +23,26 @@ class Scraper(object):
         self._pages = list()
         self._releases = list()
         self._articles = list()
+
     def load_page(self, URL):
+        '''
+        load_page()
+
+        Creates a new scraper to parse an HTML page from a given URL
+
+        Parameter: string containing a URL
+        '''
         html_doc = urllib2.urlopen(URL)
         self._soup = BeautifulSoup(html_doc, "html.parser")
         
     def find_releases(self):
+        '''
+        find_releases()
+
+        Searches through all loaded pages and populates a list of press release articles
+
+        Precondition: Previously loaded pages are Press Release pages
+        '''
         print("Loading releases...")
         count = 0
         for page in self._pages:
@@ -46,6 +61,13 @@ class Scraper(object):
         print(str(count) + " releases loaded!")
         
     def find_articles(self):
+        '''
+        find_articless()
+
+        Searches through all loaded pages and populates a list of Scientific Articles
+
+        Precondition: Previously loaded pages are Scientific Article pages
+        '''
         print("Loading articles...")
         count = 0
         for page in self._pages:
@@ -65,6 +87,13 @@ class Scraper(object):
 
         print(str(count) + " articles loaded!")
     def load_pages(self, URL):
+        '''
+        load_pages()
+
+        Finds all pages relevant to the given URL
+
+        Parameter: String representing URL of a DNDi page containing posts.
+        '''
         print("Finding pages...")
         # Count up page numbers from one
         page = 1
