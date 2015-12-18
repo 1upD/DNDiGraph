@@ -3,7 +3,7 @@ This project is an attempt to retrieve data from [DNDi](http://dndi.org) website
 the data retrieved.
 ## Installation
 Developed under: PHP 5.6, Apache 2.4, MySQL 5.7, Laravel 5.1. <br/>
-Additional Modules: BeautifulSoup 4, jqPlot 1.08<br/><br/><br/>
+Additional Modules: BeautifulSoup 4, jqPlot 1.08<br/><br/>
 If all the required modules and environment have been set. <br/>
 1. Execute main.py in app/helpers
 
