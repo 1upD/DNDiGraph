@@ -1,6 +1,5 @@
 # DNDi Graph
-[a link](dndi.org)
-This project is an attempt to retrieve data from DNDi website and generate useful visualizations of
+This project is an attempt to retrieve data from [DNDi](dndi.org) website and generate useful visualizations of
 the data retrieved.
 ## Installation
 Developed under: PHP 5.6, Apache 2.4, MySQL 5.7, Laravel 5.1.
