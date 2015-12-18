@@ -1,6 +1,4 @@
-<snippet>
-  <content><![CDATA[
-# ${1:DNDi Graph}
+# DNDi Graph
 This project is an attempt to retrieve data from DNDi website and generate useful visualizations of
 the data retrieved.
 ## Installation
@@ -12,6 +10,3 @@ Use the website to get an idea of the trend of the data inside DNDi database.
 
 ## History
 December 18, 2015 - Initial Commit 
-]]></content>
-  <tabTrigger>readme</tabTrigger>
-</snippet>
